@@ -9,6 +9,11 @@
 // Watermark of your name 
 // PDF SRN_Week2.pdf
 
+// Priya Mohata
+// PES2UG19CS301
+// Week-2
+
+
 import java.util.Scanner;
 
 class Card{
