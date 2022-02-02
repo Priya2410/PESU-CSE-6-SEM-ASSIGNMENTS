@@ -1,5 +1,4 @@
 %{
-    /* PRIYA MOHATA - PES2UG19CS301 - SECTION E */
 #define YYSTYPE char*
 #include "y.tab.h"
 #include<stdio.h>
@@ -13,7 +12,6 @@ digits {digit}+
 opFraction (\.{digits})?
 opExponent ([Ee][+-]?{digits})?
 number {digits}{opFraction}{opExponent}
-
 %%
 
 \/\/(.*) ;
@@ -49,7 +47,6 @@ number {digits}{opFraction}{opExponent}
 ">" {return *yytext;}
 {number} {return T_NUM;}
 {id}\.h {return T_HEADER;}
-{id} {return T_ID};
+{id} {return T_ID;}
 . {} 
 %%
-

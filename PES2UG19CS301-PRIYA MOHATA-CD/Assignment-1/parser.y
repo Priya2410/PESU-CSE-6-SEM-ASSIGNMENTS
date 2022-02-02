@@ -8,18 +8,18 @@ int yylex();
 extern int yylineno;
 %}
 
-
-%token T_INT T_DOUBLE T_FLOAT T_CHAR T_WHILE T_IF T_ELSE T_DO T_INCLUDE T_MAIN T_STRLITERAL T_EQCOMP T_NOTEQUAL T_GREATEREQ T_LESSEREQ T_NUM T_HEADER T_ID
+%token T_INT T_DOUBLE T_FLOAT T_CHAR T_WHILE T_DO T_STRLITERAL T_IF T_ELSE T_INCLUDE T_MAIN T_EQCOMP T_NOTEQUAL T_GREATEREQ T_LESSEREQ T_NUM T_HEADER T_ID
 
 %start START
 
 %%
-START	:	PROG {printf("Valid syntax\n"); YYACCEPT;}
+START	:	PROG {printf("Valid syntax\n");YYACCEPT;}
 	;
 PROG	:	T_INCLUDE'<'T_HEADER'>'PROG
 	|	MAIN PROG
 	|	DECLR';'PROG
 	|	ASSGN';'PROG
+	|
 	;
 DECLR	:	TYPE LISTVAR
 	;
@@ -56,8 +56,8 @@ F	:	'('EXPR')'
 	|	T_NUM
 	;
 
-MAIN	:	TYPE T_MAIN'('EMPTY_LISTVAR')''{'STMT'}'
-		;
+MAIN : TYPE T_MAIN'('EMPTY_LISTVAR')''{' STMT '}';
+
 EMPTY_LISTVAR	:	LISTVAR
 		|
 		;
@@ -91,7 +91,7 @@ void yyerror(char *s)
 	printf("Error : %s at %d\n",s,yylineno);
 }
 
-main(int argc,char* argv[])
+int main(int argc,char* argv[])
 {
 	yyparse();
 	return 0;
