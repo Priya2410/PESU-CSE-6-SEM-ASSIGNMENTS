@@ -1,4 +1,7 @@
 %{
+// PRIYA MOHATA 
+// PES2UG19CS301 
+// SECTION E
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

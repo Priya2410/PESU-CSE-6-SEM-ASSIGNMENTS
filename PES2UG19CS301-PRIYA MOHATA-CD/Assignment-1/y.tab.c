@@ -114,6 +114,9 @@
 /* Copy the first part of user declarations.  */
 #line 1 "parser.y"
 
+// PRIYA MOHATA 
+// PES2UG19CS301 
+// SECTION E
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -154,7 +157,7 @@ typedef int YYSTYPE;
 
 
 /* Line 216 of yacc.c.  */
-#line 158 "y.tab.c"
+#line 161 "y.tab.c"
 
 #ifdef short
 # undef short
@@ -455,11 +458,11 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    16,    16,    18,    19,    20,    21,    22,    24,    26,
-      27,    29,    30,    31,    32,    34,    36,    37,    39,    40,
-      41,    42,    43,    44,    46,    47,    48,    50,    51,    52,
-      54,    55,    56,    59,    61,    62,    64,    65,    66,    73,
-      74,    75,    76,    77,    80,    81,    82,    83,    85,    86
+       0,    19,    19,    21,    22,    23,    24,    25,    27,    29,
+      30,    32,    33,    34,    35,    37,    39,    40,    42,    43,
+      44,    45,    46,    47,    49,    50,    51,    53,    54,    55,
+      57,    58,    59,    62,    64,    65,    67,    68,    69,    76,
+      77,    78,    79,    80,    83,    84,    85,    86,    88,    89
 };
 #endif
 
@@ -1420,13 +1423,13 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 16 "parser.y"
+#line 19 "parser.y"
     {printf("Valid syntax\n");YYACCEPT;}
     break;
 
 
 /* Line 1267 of yacc.c.  */
-#line 1430 "y.tab.c"
+#line 1433 "y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1640,7 +1643,7 @@ yyreturn:
 }
 
 
-#line 88 "parser.y"
+#line 91 "parser.y"
 
 void yyerror(char *s)
 {

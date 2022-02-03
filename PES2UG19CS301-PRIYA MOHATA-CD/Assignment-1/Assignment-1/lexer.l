@@ -1,4 +1,7 @@
 %{
+// PRIYA MOHATA 
+// PES2UG19CS301 
+// SECTION E
 #define YYSTYPE char*
 #include "y.tab.h"
 #include<stdio.h>
