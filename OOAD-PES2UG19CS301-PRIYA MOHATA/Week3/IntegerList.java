@@ -1,3 +1,4 @@
+// PRIYA MOHATA // PES2UG19CS301  // SECTION E
 import java.util.Scanner;
 
 class IntegerList{
@@ -20,7 +21,8 @@ class IntegerList{
 
     }
 
-    String display(){
+    @Override
+    public String toString(){
         String returnString = "";
         for (int i = 0; i < numElements; i++) {
             returnString += i + ": " + list[i] + "\n";
@@ -56,15 +58,16 @@ class SortedList extends IntegerList{
 }
 
 
-class ListTest {
+class Main{
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        // Fixed size array of 10 elements 
         IntegerList myList = new IntegerList(10);
         int count = 0;
         int num=0;
         while (count < 10) {
-            System.out.println("Please enter a number, enter 0 to quit:");
+            System.out.println("Please enter the element of the array, enter 0 to quit");
             num = scan.nextInt();
             if (num != 0) {
                 myList.add(num);
@@ -73,14 +76,14 @@ class ListTest {
                 break;
             }
         }
-        System.out.println(myList.display());
+        System.out.println(myList);
 
         
         SortedList mylist1=new SortedList(10);
         int count1 = 0;
         int num1;
         while (count1 < 10) {
-            System.out.println("Please enter a number, enter 0 to quit:");
+            System.out.println("Please enter the element of the array, enter 0 to quit");
             num1 = scan.nextInt();
             if (num1 != 0) {
                 mylist1.add(num1);
@@ -90,7 +93,7 @@ class ListTest {
             }
         }
 
-        System.out.println(mylist1.display());
+        System.out.println(mylist1);
         scan.close();
     }
 }

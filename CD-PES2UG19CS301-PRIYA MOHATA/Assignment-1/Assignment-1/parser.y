@@ -88,6 +88,7 @@ COND	:	EXPR
 WHILE_2	:	'{'STMT'}'
 	|';'
 	;
+FOR : '('ASSGN';'COND';'UNARYEXPR')''{'STMT'}'STMT;
 %%
 void yyerror(char *s)
 {

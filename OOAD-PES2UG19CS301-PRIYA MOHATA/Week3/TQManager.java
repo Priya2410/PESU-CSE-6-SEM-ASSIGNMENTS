@@ -23,6 +23,7 @@ class ShortAnswer extends TestQuestion{
     }
 
     // Method to display the output 
+    @Override
     public String toString(){
         String str="The short answer question is:"+question+"\nThe number of lines are :"+numlines;
         return str;
@@ -42,6 +43,7 @@ class LongAnswer extends TestQuestion{
     }
 
     // Method to display the output 
+    @Override
     public String toString(){
         String str="The long answer question is:"+question+"\nThe number of lines are :"+numlines;
         return str;
@@ -69,6 +71,7 @@ class MCQ extends TestQuestion{
     }
 
     // Method to display the output 
+    @Override
     public String toString(){
         String str="The MCQ question is:"+question+"\nThe number of choices are :"+numchoices+"\n";
         str=str+"The choices are as follows:\n";
@@ -81,7 +84,6 @@ class MCQ extends TestQuestion{
 }
 
 public class TQManager {
-
     public static void main(String[] args) 
     {
         int noq,choice;
