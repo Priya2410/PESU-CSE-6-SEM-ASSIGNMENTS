@@ -40,46 +40,76 @@
       know about them.  */
    enum yytokentype {
      T_INT = 258,
-     T_DOUBLE = 259,
-     T_FLOAT = 260,
-     T_CHAR = 261,
-     T_WHILE = 262,
-     T_DO = 263,
-     T_STRLITERAL = 264,
-     T_IF = 265,
-     T_ELSE = 266,
-     T_INCLUDE = 267,
-     T_MAIN = 268,
-     T_EQCOMP = 269,
-     T_NOTEQUAL = 270,
-     T_GREATEREQ = 271,
-     T_LESSEREQ = 272,
-     T_NUM = 273,
-     T_HEADER = 274,
-     T_ID = 275,
-     T_IFX = 276
+     T_CHAR = 259,
+     T_DOUBLE = 260,
+     T_WHILE = 261,
+     T_INC = 262,
+     T_DEC = 263,
+     T_OROR = 264,
+     T_ANDAND = 265,
+     T_EQCOMP = 266,
+     T_NOTEQUAL = 267,
+     T_GREATEREQ = 268,
+     T_LESSEREQ = 269,
+     T_LEFTSHIFT = 270,
+     T_RIGHTSHIFT = 271,
+     T_NUM = 272,
+     T_ID = 273,
+     T_PRINTLN = 274,
+     T_STRING = 275,
+     T_FLOAT = 276,
+     T_BOOLEAN = 277,
+     T_IF = 278,
+     T_ELSE = 279,
+     T_STRLITERAL = 280,
+     T_DO = 281,
+     T_INCLUDE = 282,
+     T_HEADER = 283,
+     T_MAIN = 284,
+     T_FOR = 285,
+     T_ARRAY = 286,
+     T_OR = 287,
+     T_AND = 288,
+     T_INCR = 289,
+     T_DECR = 290,
+     T_IFX = 291
    };
 #endif
 /* Tokens.  */
 #define T_INT 258
-#define T_DOUBLE 259
-#define T_FLOAT 260
-#define T_CHAR 261
-#define T_WHILE 262
-#define T_DO 263
-#define T_STRLITERAL 264
-#define T_IF 265
-#define T_ELSE 266
-#define T_INCLUDE 267
-#define T_MAIN 268
-#define T_EQCOMP 269
-#define T_NOTEQUAL 270
-#define T_GREATEREQ 271
-#define T_LESSEREQ 272
-#define T_NUM 273
-#define T_HEADER 274
-#define T_ID 275
-#define T_IFX 276
+#define T_CHAR 259
+#define T_DOUBLE 260
+#define T_WHILE 261
+#define T_INC 262
+#define T_DEC 263
+#define T_OROR 264
+#define T_ANDAND 265
+#define T_EQCOMP 266
+#define T_NOTEQUAL 267
+#define T_GREATEREQ 268
+#define T_LESSEREQ 269
+#define T_LEFTSHIFT 270
+#define T_RIGHTSHIFT 271
+#define T_NUM 272
+#define T_ID 273
+#define T_PRINTLN 274
+#define T_STRING 275
+#define T_FLOAT 276
+#define T_BOOLEAN 277
+#define T_IF 278
+#define T_ELSE 279
+#define T_STRLITERAL 280
+#define T_DO 281
+#define T_INCLUDE 282
+#define T_HEADER 283
+#define T_MAIN 284
+#define T_FOR 285
+#define T_ARRAY 286
+#define T_OR 287
+#define T_AND 288
+#define T_INCR 289
+#define T_DECR 290
+#define T_IFX 291
 
 
 
