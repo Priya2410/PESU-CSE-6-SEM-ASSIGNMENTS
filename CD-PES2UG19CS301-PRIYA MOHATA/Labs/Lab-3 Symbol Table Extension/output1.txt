@@ -1,0 +1,11 @@
+Error :5 at 3 
+Error :2 at 3 
+Error :7 at 4 
+Error :14 at 4 
+Error :6.9845 at 6 
+Valid syntax
+Name	Size	Type	LineNo	Scope	Value
+a	2	2	3	1	98.000000
+b	4	3	5	1	3455650.300000
+c	8	4	6	1	6.9845
+d	1	1	7	1	"c"
