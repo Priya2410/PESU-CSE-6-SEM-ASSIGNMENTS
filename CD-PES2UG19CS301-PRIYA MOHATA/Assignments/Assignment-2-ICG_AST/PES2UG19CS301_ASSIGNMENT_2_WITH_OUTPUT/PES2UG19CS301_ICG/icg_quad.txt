@@ -1,0 +1,29 @@
+Generated Intermediate Code 
+>	a	b	t1
+if	t1		L1
+goto			L2
+Label			L1
++	a	1	t2
+=	t2	 	a
+-	b	1	t3
+=	t3	 	b
+goto			L3
+Label			L2
+-	a	1	t4
+=	t4	 	a
+-	b	1	t5
+=	t5	 	b
+Label			L3
+Generated Intermediate Code 
+>	a	b	t1
+if	t1		L1
+goto			L2
+Label			L1
++	a	1	t2
+=	t2	 	a
+-	b	1	t3
+=	t3	 	b
+Label			L2
+*	b	a	t4
++	a	t4	t5
+=	t5	 	a

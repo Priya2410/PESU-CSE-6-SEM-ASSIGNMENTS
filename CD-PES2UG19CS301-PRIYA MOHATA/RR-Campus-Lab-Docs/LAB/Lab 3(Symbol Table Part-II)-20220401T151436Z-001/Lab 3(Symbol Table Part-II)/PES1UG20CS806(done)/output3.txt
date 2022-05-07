@@ -1,0 +1,8 @@
+Error :Undeclared variable is being used at 4 
+Error :Undeclared variable is being used at 6 
+Valid syntax
+Name      size      type      lineno    scope     value
+a         2         2         3         1         5         
+c         4         3         5         1         4.5       
+d         8         4         7         1         5.44      
+e         8         4         8         1         d         

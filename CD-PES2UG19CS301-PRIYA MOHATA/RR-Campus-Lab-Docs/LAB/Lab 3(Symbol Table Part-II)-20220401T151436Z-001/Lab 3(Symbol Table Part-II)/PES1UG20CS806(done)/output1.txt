@@ -1,0 +1,9 @@
+Error :Variable is declared previously
+ at 8 
+Valid syntax
+Name      size      type      lineno    scope     value
+a         2         2         3         1         2         
+b         4         3         4         1         4.6       
+c         8         4         5         1         6.9845    
+d         1         1         6         1         "c"       
+b         2         2         8         1         ~         
