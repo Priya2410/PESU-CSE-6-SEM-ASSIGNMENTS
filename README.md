@@ -10,3 +10,4 @@ The repository contains assignments for the following subjects
 
 #### The project for AIWIR : [Fashion Recommender System](https://github.com/Priya2410/Fashion-Recommender-System-AIWIR-Project)
 #### The project for OOADJ : [Employee Management System](https://github.com/Priya2410/OOADJ_EMPLOYEE_MANAGEMENT_SYSTEM)
+#### CC-Hack-Assignment 2 : [Ride Matching](https://github.com/301-302-309-332-CloudHack-2/CloudHack-2)
